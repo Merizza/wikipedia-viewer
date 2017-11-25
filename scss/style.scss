@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+$dark-color: #202020;
+$light-color: #BEB48C;
+
+body {
+  background-color: $dark-color;
+  font-family: Raleway;
+}
+
+#header {
+  background-color: $light-color;
+  h1 {
+  padding: 5px 0;
+  font-size: 30px;
+  text-align: center;
+  color: $dark-color;
+  }
+}
+
+#search {
+  width: 25%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  img {
+  height: 50px;
+  width: 50px;
+  margin-right: -10px;
+  }
+  
+  #inputField {
+    display:none;
+  }
+  
+  #userInput {
+    border: 5px solid $light-color;
+    border-radius: 25px 25px;
+    margin-right: 5px;
+    text-indent: 10px;
+    height: 30px;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      text-align: center;
+      font-size: 20px;
+      color: $dark-color;
+    }
+  }
+  #button1 {
+    border: 3px solid $light-color;
+    background-color: #F5F5F5;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: $light-color;
+    outline: none;
+    position: absolute;
+    height: 40px;
+    right: 75px;
+    top: 0;
+    cursor: pointer;
+    &:hover {
+      color: $dark-color;
+    }
+    &:active {
+      transform: translateY(2px);
+    }
+    }
+
+  }
+  #button2 {
+    width: 50px;
+    border-radius: 50% 50%;
+    border: 2px solid $light-color;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    &:focus {
+      outline:none;
+    }
+    &:active {
+      box-shadow: 1px 1px $light-color;
+      transform: translateY(1px);
+    }
+    i {
+      color: $light-color;
+      font-size: 20px;
+    }
+}
+
+#random { 
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  i {
+    color:$light-color;
+    font-size: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: $light-color;
+    font-weight: bold;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+.box {
+  width: 80%;
+  height: auto;
+  padding: 5px 15px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto; 
+  background-color: $light-color;
+  border-radius: 20px;
+  ~ .box {
+    margin-top: 0;
+  }
+}
+
+.spacer {
+  padding: 1%;
+  content: url("http://abc10up.com/wp-content/uploads/2015/08/Vortex_Line_Break_PNG.png");
+  width: 500px;
+  height: 20px;
+  margin: 0px auto;
+  
+}
+
+ul {
+  li { 
+    list-style:none;
+    text-indent: 20px;
+    a {
+      text-decoration: none;
+      color:$dark-color;
+      font-size: 30px;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+  
+}
